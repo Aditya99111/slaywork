@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #e8786e;
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--black);
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color:rgb(0, 0, 0);
+}
+
+.heading span{
+    color:var(--main-color);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    background:#000000;
+    font-weight: 500;
+    color:#fff;
+    cursor: pointer;
+    border: 1px solid black;
+
+}
+
+.btn:hover{
+    background: #fff;
+    color:#000;
+    border: 1px solid;
+    border-radius: .3rem;
+}
+
+
+/* header strat  */
+
+#headercontainer{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+
+}
+.top_header{
+
+    background-color: rgb(245, 203, 203);
+    display: flex;
+    padding: 1rem 9%;
+    font-size: 1.4rem;
+
+}
+
+.top_header .info{
+    display: flex;
+    margin: auto;
+}
+
+.top_header .info .timing{
+    padding: 0 1.5rem;
+}
+
+.top_header i:hover{
+    color: #e8786e;
+}
+.top_header .phone{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5rem;
+    color: rgb(68, 68, 68);
+}
+
+
+.header{
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 9%;
+  padding-left: 5%;
+  padding-right: 4%;
+}
+
+.header .logo{
+  font-size: 3.65rem;
+  margin-top: -2rem;
+  color: var(--black);
+  font-weight: bolder;
+  display: flex;
+  font-family: 'Abril Fatface', cursive;
+    }
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: #777;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+}
+
+
+.header .navbar .try{
+    background-color: #000000;
+    padding: 1rem 3rem;
+    color: #fff;
+    border-radius: .2rem;
+    border: 1px solid;
+    
+}
+.header .navbar .try:hover{
+    padding: 1rem 3rem;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: .5rem;
+    
+}
+
+
+
+
+.home {
+    
+  padding-top: 10rem;
+  min-height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #ffffff;
+  }
+  
+  .home .image {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+    flex: 1 1 42rem;
+    margin-top: 5rem;
+  }
+  
+  .home .image img {
+    width: 100%;
+    -webkit-animation: floating 4s linear infinite;
+            animation: floating 4s linear infinite;
+  }
+  
+  .home .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+  }
+  
+  .home .content h3 {
+    padding-left: 4rem;
+    font-size: 6rem;
+    line-height: 6.5rem;
+    font-weight: 500;
+    font-family: 'Abril Fatface', cursive;
+
+
+  }
+  
+  .home .content p {
+    font-size: 2rem;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+
+
+
+.motivation .heading{
+    color: rgb(0, 0, 0);
+    font-family: 'Homemade Apple', cursive; 
+     font-size: 4rem;
+     text-decoration: underline;
+     text-decoration-color: #130f40 ;
+     text-underline-offset: 5px;
+
+}
+
+
+
+
+
+
+.steps {
+    background: #cae8e3;
+    padding: 1rem 9%;
+  }
+  
+  .steps .heading{
+      font-size: 3rem;
+    
+  }
+  .steps .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .steps .box-container .box {
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .steps .box-container .box img {
+    height: 20rem;
+  }
+  
+  .steps .box-container .box h3 {
+    font-size: 2.2rem;
+    padding: 2rem 0;
+  }
+  
+  .steps .box-container .box p {
+    font-size: 1.7rem;
+    line-height: 2;
+    padding-bottom: 1rem;
+  }
+
+
+.plan{
+    padding: 5rem 9%;
+}
+
+  
+.plan .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .plan .box-container .box {
+    position: relative;
+    padding: 2rem;
+    border-radius: .5rem;
+    position: relative;
+    margin-bottom: 2rem;
+    background: #eee;
+  }
+  
+  .plan .box-container .box .btn {
+    position: absolute;
+    bottom: -2rem;
+    right: 2rem;
+    background: rgb(0, 0, 0);
+  }
+  .plan .box-container .box .btn:hover{
+      color: #fff;
+  }
+  .plan .box-container .box .title {
+    text-align: center;
+    color: rgb(203, 96, 96);
+    font-size: 2rem;
+  }
+  
+  .plan .box-container .box .day {
+    text-align: center;
+    color: #130f40;
+    font-size: 3.5rem;
+  }
+  
+  .plan .box-container .box .icon {
+    color:rgb(247, 130, 130);
+    font-size: 5rem;
+    padding: 2rem 0;
+  }
+  
+  .plan .box-container .box .list {
+    margin: 1rem 0;
+  }
+  
+  .plan .box-container .box .list p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+  }
+  
+  .plan .box-container .box .list p span {
+    color: #e67e22;
+  }
+  
+  .plan .box-container .box .amount {
+    font-size: 5rem;
+    font-weight: bolder;
+    color: #130f40;
+  }
+  
+  .plan .box-container .box .amount span {
+    font-size: 3rem;
+  }
+
+
+.textcircle{
+  font-family: 'Abril Fatface', cursive;
+  text-transform: uppercase;
+
+}
+
+.work{
+  display:flex;
+  justify-content:center; 
+  margin-top: -32rem;
+}
+
+
+@media only screen and (max-width: 750px) {
+  html{
+      font-size: 55%;
+  }
+  .header .navbar {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+  .work{
+    display:flex;
+    justify-content:center; 
+    margin-top: -5rem;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  .image{
+    display: none;
+  }
+
+}
+
